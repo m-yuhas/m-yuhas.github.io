@@ -1,0 +1,31 @@
+---
+layout: null
+permalink: /
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url={{ '/en/' | relative_url }}">
+  <title>{{ site.title }}</title>
+  <script>
+    (function() {
+      var userLang = (navigator.language || navigator.userLanguage).substring(0, 2);
+      var routes = {
+        "fr": "/fr/",
+        "en": "/en/",
+        "es": "/es/",
+        "zh": "/zh/"
+      };
+      var fallback = "/en/";
+      window.location.href = routes[userLang] || fallback;
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to your language... <a href="{{ '/en/' | relative_url }}">Click here</a> if you are not automatically redirected.</p>
+  <p>Redirigiendo a su lengua... <a href="{{ '/es/' | relative_url }}">Haga clic aquí</a> si no está redirigido automáticamente.</p>
+  <!--<p>Redirigeant vers votre langue... <a href="{{ '/fr/' | relative_url }}">Clicquez ici</a> si vous n'êtes pas redirigé automatiquement.</p>-->
+  <p>正在转址向您的语言。。。不自动被转址的话请<a href="{{ '/zh/' | relative_url }}">点击这里</a>。</p>
+</body>
+</html>

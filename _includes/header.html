@@ -1,0 +1,64 @@
+{% assign current_lang = page.lang | default: site.default_lang %}
+
+
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+
+    <nav class="site-nav">
+      <!-- Removed the conflicting checkbox and menu-icon burger layers entirely -->
+      <div class="tab-navigation">
+        <!-- Loop for your existing header tabs -->
+        {%- for my_page in site.pages -%}
+          {%- if my_page.lang == current_lang and my_page.title -%}
+            <a class="header-tab {% if page.url == my_page.url %}active-tab{% endif %}" href="{{ my_page.url | relative_url }}">
+              {{ my_page.title | escape }}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+
+        <!-- Mobile & Desktop Safe Click Dropdown Tab -->
+        <div class="lang-dropdown-tab" id="langDropdown">
+          <button class="header-tab dropdown-trigger" onclick="toggleLangMenu(event)" aria-haspopup="true" aria-expanded="false">
+            Language <span class="arrow">▼</span>
+          </button>
+          <div class="dropdown-content">
+            {% assign en_url = page.url | replace_first: '/es/', '/en/' %}
+            <a href="{{ en_url | relative_url }}" class="{% if current_lang == 'en' %}active-lang{% endif %}">English</a>
+            
+            {% assign es_url = page.url | replace_first: '/en/', '/es/' %}
+            <a href="{{ es_url | relative_url }}" class="{% if current_lang == 'es' %}active-lang{% endif %}">Español</a>
+
+            {% assign zh_url = page.url | replace_first: '/en/', '/zh/' %}
+            <a href="{{ zh_url | relative_url }}" class="{% if current_lang == 'zh' %}active-lang{% endif %}">中文</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+function toggleLangMenu(event) {
+  event.stopPropagation();
+  var container = document.getElementById("langDropdown");
+  var button = event.currentTarget;
+  var isOpen = container.classList.contains("is-open");
+
+  if (isOpen) {
+    container.classList.remove("is-open");
+    button.setAttribute("aria-expanded", "false");
+  } else {
+    container.classList.add("is-open");
+    button.setAttribute("aria-expanded", "true");
+  }
+}
+
+document.addEventListener("click", function(event) {
+  var container = document.getElementById("langDropdown");
+  if (container && container.classList.contains("is-open")) {
+    container.classList.remove("is-open");
+    container.querySelector(".dropdown-trigger").setAttribute("aria-expanded", "false");
+  }
+});
+</script>
