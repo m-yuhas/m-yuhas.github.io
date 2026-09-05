@@ -25,31 +25,31 @@ permalink: /:path/
 header_pages:
   - publications.markdown
   - teaching.markdown
-  - software.markdown
+  #- software.markdown
   - service.markdown
   #- blog.markdown
-socials:
-  - ieee
-  - dblp
-  - scopus
-  - googlescholar
-  - linkedin
-  - orcid
-  - semanticscholar
 default_lang: en
 defaults:
   - scope:
       path: "en"
     values:
       lang: "en"
+      localized_title: "Michael Yuhas"
   - scope:
       path: "es"
     values:
       lang: "es"
+      localized_title: "Michael Yuhas"
   - scope:
-      path: "zh"
+      path: "zh-Hans"
     values:
-      lang: "zh"
+      lang: "zh-Hans"
+      localized_title: "迈克尔 余哈斯"
+  - scope:
+      path: "zh-Hant"
+    values:
+      lang: "zh-Hant"
+      localized_title: "邁克爾 餘哈斯"
 
 plugins:
   - jekyll-feed

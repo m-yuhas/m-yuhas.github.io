@@ -1,21 +1,55 @@
-<link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+{% assign current_lang = page.lang | default: site.default_lang %}
 
-<footer class="site-footer h-card">
-  <data class="u-url" value="{{ '/' | relative_url }}"></data>
+<footer class="site-footer">
 
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
+
       <div class="footer-col">
       {%- if site.author %}
-        <p>&copy;2026 {{ site.author | escape }}</p>
+        <p>&copy;2026 {{ page.localized_title | escape }}</p>
       {%- endif %}
       </div>
-      <div class="footer-col">
-        <p>Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
-      </div>
-    </div>
 
+      <div class="footer-col">
+      {% case page.lang %}
+        {% when 'en' %}
+          {% capture update_str %}Last updated: {{ site.time | date: "%B %d, %Y" }}{% endcapture %}
+        {% when 'es' %}
+          {% assign month = site.time | date: "%-m" %}
+          {% assign day = site.time | date: "%-d" %}
+          {% assign year = site.time | date: "%Y" %}
+          {% case month %}
+            {% when "1" %}{% assign month_name = 'enero' %}
+            {% when "2" %}{% assign month_name = 'febrero' %}
+            {% when "3" %}{% assign month_name = 'marzo' %}
+            {% when "4" %}{% assign month_name = 'abril' %}
+            {% when "5" %}{% assign month_name = 'mayo' %}
+            {% when "6" %}{% assign month_name = 'junio' %}
+            {% when "7" %}{% assign month_name = 'julio' %}
+            {% when "8" %}{% assign month_name = 'agosto' %}
+            {% when "9" %}{% assign month_name = 'septiembre' %}
+            {% when "10" %}{% assign month_name = 'octubre' %}
+            {% when "11" %}{% assign month_name = 'noviembre' %}
+            {% when "12" %}{% assign month_name = 'diciembre' %}
+          {% endcase %}
+          {% capture update_str %}Actualización Última: {{ day }} de {{ month_name }} de {{ year }}{% endcapture %}
+        {% when 'zh-Hans' %}
+          {% assign month = site.time | date: "%-m" %}
+          {% assign day = site.time | date: "%-d" %}
+          {% assign year = site.time | date: "%Y" %}
+          {% capture update_str %}最后更新日期：{{ day }}日{{ month }}月{{ year }}年{% endcapture %}
+        {% when 'zh-Hant' %}
+          {% assign month = site.time | date: "%-m" %}
+          {% assign day = site.time | date: "%-d" %}
+          {% assign year = site.time | date: "%Y" %}
+          {% capture update_str %}最後更新日期：{{ day }}日{{ month }}月{{ year }}年{% endcapture %}
+        {% endcase %}
+        <p>{{ update_str }}</p>
+      </div>
+
+    </div>
 
   </div>
 
