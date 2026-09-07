@@ -41,6 +41,11 @@ defaults:
       lang: "es"
       localized_title: "Michael Yuhas"
   - scope:
+      path: "ms"
+    values:
+      lang: "ms"
+      localized_title: "مايكل يوهاس"
+  - scope:
       path: "zh-Hans"
     values:
       lang: "zh-Hans"

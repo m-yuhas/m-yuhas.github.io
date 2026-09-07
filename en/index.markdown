@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-
 I'm an assistant professor of computer engineering at St. Mary's University, Texas, and a visiting scholar at Vanderbilt University.
 My research is focused on guaranteeing safety in cyber-physical systems.
 Specifically, I focus on the interplay between timing, resource, and functional constraints and their impact on system performance.
