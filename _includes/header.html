@@ -27,7 +27,7 @@
             {% assign es_url = page.url | replace_first: current_lang_url, '/es/' %}
             <a href="{{ es_url | relative_url }}" class="{% if current_lang == 'es' %}active-lang{% endif %}">español</a>
 
-            {% assign ms_url = page.url | replace_first: current_lang_url, '/ms' %}
+            {% assign ms_url = page.url | replace_first: current_lang_url, '/ms/' %}
             <a href="{{ ms_url | relative_url }}" class="{% if current_lang == 'ms' %}active-lang{% endif %}">Bahasa Melayu</a>
 
             {% assign zh_url = page.url | replace_first: current_lang_url, '/zh-Hans/' %}
