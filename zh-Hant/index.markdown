@@ -10,7 +10,7 @@ layout: page
 * [研究陳述](../assets/docs/rs.pdf)
 
 为获取另外信息、请阅读我在以下网站的个人页：
-* [聖瑪利亞大學教職員網頁]()
+* [聖瑪利亞大學教職員網頁](https://www.stmarytx.edu/academics/faculty/michael-yuhas/)
 * [DBLP](https://dblp.org/pid/176/3933.html)
 * [Github](https://github.com/m-yuhas)
 * [Google Scholar](https://scholar.google.com/citations?user=yAeE8OEAAAAJ&hl=en&oi=ao)

@@ -10,7 +10,7 @@ Domain aplikasi utama saya adalah sistem pengangkutan dengan fokus khusus penyel
 * [Penyataan Penyelidikan](../assets/docs/rs.pdf)
 
 Untuk maklumat tambahan, mohon lihat profil saya di laman web berikutnya:
-* [Laman Web Fakulti Universiti Santa Maria]()
+* [Laman Web Fakulti Universiti Santa Maria](https://www.stmarytx.edu/academics/faculty/michael-yuhas/)
 * [DBLP](https://dblp.org/pid/176/3933.html)
 * [Github](https://github.com/m-yuhas)
 * [Google Scholar](https://scholar.google.com/citations?user=yAeE8OEAAAAJ&hl=en&oi=ao)

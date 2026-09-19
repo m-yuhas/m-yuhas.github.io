@@ -35,6 +35,25 @@
             {% when "12" %}{% assign month_name = 'diciembre' %}
           {% endcase %}
           {% capture update_str %}Actualización Última: {{ day }} de {{ month_name }} de {{ year }}{% endcapture %}
+        {% when 'ms' %}
+          {% assign month = site.time | date: "%-m" %}
+          {% assign day = site.time | date: "%-d" %}
+          {% assign year = site.time | date: "%Y" %}
+          {% case month %}
+            {% when "1" %}{% assign month_name = 'Januari' %}
+            {% when "2" %}{% assign month_name = 'Februari' %}
+            {% when "3" %}{% assign month_name = 'Mac' %}
+            {% when "4" %}{% assign month_name = 'April' %}
+            {% when "5" %}{% assign month_name = 'Mei' %}
+            {% when "6" %}{% assign month_name = 'Jun' %}
+            {% when "7" %}{% assign month_name = 'Julai' %}
+            {% when "8" %}{% assign month_name = 'Ogos' %}
+            {% when "9" %}{% assign month_name = 'September' %}
+            {% when "10" %}{% assign month_name = 'Oktober' %}
+            {% when "11" %}{% assign month_name = 'November' %}
+            {% when "12" %}{% assign month_name = 'Disember' %}
+          {% endcase %}
+          {% capture update_str %}Dikemas terakhir: {{ day }} {{ month_name }} {{ year }}{% endcapture %}          
         {% when 'zh-Hans' %}
           {% assign month = site.time | date: "%-m" %}
           {% assign day = site.time | date: "%-d" %}

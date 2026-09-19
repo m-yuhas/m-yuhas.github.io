@@ -31,7 +31,7 @@ M. Yuhas, G. Gunter, J. P. Talusan, A. Laszka, D. Freudberg, and A. Dubey, "Comp
 <span class="badge-value value-cite">引用</span>
 </a>
 <a href="https://rtcsa2026.github.io/?page=accepted_papers.html" class="html-badge">
-<span class="badge-value value-award">领奖：Outstanding Paper Award</span>
+<span class="badge-value value-award">Outstanding Paper Award</span>
 </a>
 
 S. Gupta, M. Yuhas, and A. Dubey, "DA-MCTS: Deadline-Aware Action Exploration for Safe Real-Time Planning," in *2026 IEEE 32nd International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)*, Qingdao, China, Aug. 2026.
@@ -60,7 +60,7 @@ M. Yuhas, R. K. Ahir, L. V. T. Hartono, M. D. D. Putranto, A. Easwaran, and S. H
 <span class="badge-value value-cite">引用</span>
 </a>
 <a href="https://attend.ieee.org/isgt-asia-2025/" class="html-badge">
-<span class="badge-value value-award">领奖：Best Application Paper Award</span>
+<span class="badge-value value-award">Best Application Paper Award</span>
 </a>
 
 M. Prashant, A. Easwaran, S. Das, and M. Yuhas, "Guaranteeing Out-Of-Distribution Detection in Deep RL via Transition Estimation," in *Proceedings of the AAAI Conference on Artificial Intelligence*, Philadelphia, PA, USA, vol. 39, no. 12, Feb. 2025, pp. 12452–12460, doi: 10.1609/aaai.v39i12.33357.
@@ -155,7 +155,7 @@ S. Gupta, M. Yuhas, Q. Lei, and A. Dubey, "Demo: Deadline-Aware Real-Time Planni
 <span class="badge-value value-cite">引用</span>
 </a>
 <a href="https://rtcsa2026.github.io/?page=cfp_poster.html" class="html-badge">
-<span class="badge-value value-award">领奖：Best Demo Award</span>
+<span class="badge-value value-award">Best Demo Award</span>
 </a>
 
 X. Gao, A. J. Singh, G. Royyuru, M. Yuhas, and A. Easwaran, "CRLLK: Constrained Reinforcement Learning for Lane Keeping in Autonomous Driving," in *AAMAS-25 Demos track*, Detroit, MI, USA, May 2025, pp. 3026-3028.

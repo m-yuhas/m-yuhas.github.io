@@ -6,7 +6,7 @@ title: "服务"
 ### IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)
 #### 2026
 - [会议委员会会员](https://rtcsa2026.github.io/?page=committees.html)
-- [领奖：Outstanding Reviewer Award](https://rtcsa2026.github.io/?index=cfp.html)
+- [Outstanding Reviewer Award](https://rtcsa2026.github.io/?index=cfp.html)
 - 分会场主席：[Adaptive Computing Applications](https://rtcsa2026.github.io/?page=program.html)
 
 #### 2025

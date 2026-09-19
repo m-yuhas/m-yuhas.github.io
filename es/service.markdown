@@ -6,7 +6,7 @@ title: "Servicio"
 ### IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)
 #### 2026
 - [Miembro del Comité del Programa](https://rtcsa2026.github.io/?page=committees.html)
-- [Galardonado con el Premio "Outstanding Reviewer"](https://rtcsa2026.github.io/?index=cfp.html)
+- [Outstanding Reviewer](https://rtcsa2026.github.io/?index=cfp.html)
 - Moderador de la Sesión: [Adaptive Computing Applications](https://rtcsa2026.github.io/?page=program.html)
 
 #### 2025

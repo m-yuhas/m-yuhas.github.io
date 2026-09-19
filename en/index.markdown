@@ -10,7 +10,7 @@ My primary application domain is transportation systems with research focused on
 * [Research Statement](../assets/docs/rs.pdf)
 
 For additional information, please see my profiles on the following websites:
-* [St. Mary's Faculty Webpage]()
+* [St. Mary's Faculty Webpage](https://www.stmarytx.edu/academics/faculty/michael-yuhas/)
 * [DBLP](https://dblp.org/pid/176/3933.html)
 * [Github](https://github.com/m-yuhas)
 * [Google Scholar](https://scholar.google.com/citations?user=yAeE8OEAAAAJ&hl=en&oi=ao)
